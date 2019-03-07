@@ -24,7 +24,7 @@ my $menuSelection = <STDIN>;
 
 
 #first system command, display cpu and memory usage on local machine
-#with 15 second delay. Use backtick
+#with 15 second delay. Use system
 if ($menuSelection == 1){
     my @cmd = ('/usr/bin/top');
     push @cmd, '-d 15';
@@ -37,7 +37,7 @@ elsif ($menuSelection == 2){
        system(@cmd);}
 #third system command, change user permissions on files so when new Perl
 #scripts are written with shebang lines, the system adds execute 
-#permissions. Use exec.
+#permissions. Use system.
 
 elsif ($menuSelection == 3){
     my @cmd = ('/bin/chmod');
