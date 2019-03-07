@@ -1,6 +1,15 @@
 #! /usr/bin/env perl
+# Application requirements: Pick 3 system commands and provide the 
+#following:
+
+# A brief description of the command and why you might use it
+# How you will invoke the commands through Perl and why (System, Exec or Backtick)
+# Sample code showing how you would use the command 
+
 # code references:
 #https://www.cyberciti.biz/tips/howto-write-perl-script-to-monitor-disk-space.html   
+
+
 use strict;
 
 # System command 1: top – d 15 
